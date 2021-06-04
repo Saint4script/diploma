@@ -273,11 +273,11 @@ function addNewPersonToMap(person) {
     personHTML.setAttribute("class", "person-icon");
     personHTML.setAttribute("data-title", person.fullName);
     // перебираем
-    FullnameArray = person.fullName.split(" ");
-    FullName = "";
-    FullnameArray.forEach((elem) => {
-        FullName += elem;
-    });
+    // FullnameArray = person.fullName.split(" ");
+    // FullName = "";
+    // FullnameArray.forEach((elem) => {
+    //     FullName += elem;
+    // });
 
     personHTML.style = "background-color: " + randomColor() + ";";
     personHTML.style.opacity = 0;
@@ -432,8 +432,19 @@ function getStateDiffs() {
                             db_persons.push(current_person);
                         });
 
-                        
 
+                        PERSONS.forEach((person) => {
+                            let isPerson_in = false;
+                            db_persons.forEach((db_person) => {
+                                if (db_person.ID == person.ID) {
+                                    isPerson_in = true;
+                                }
+                            });
+                            if(!isPerson_in) {
+                                deletedPersons.push(person);
+                            }
+                        });
+            
                     
                         db_persons.forEach((person) => {
 
@@ -484,6 +495,7 @@ function getStateDiffs() {
 
                         resultData.set("dif", diffPersonStates);
                         resultData.set("new", newPersons);
+                        console.log(deletedPersons);
                         resultData.set("del", deletedPersons);
 
                         resolve(resultData);
@@ -502,10 +514,10 @@ function getStateDiffs() {
 async function checkPersonsStateChange() {
 
     getStateDiffs().then(changedData => {
-        console.log(changedData.entries().size);
-        console.log(changedData.get("dif"));
-        console.log("size ", changedData.size);
-        console.log(changedData);
+        // console.log(changedData.entries().size);
+        // console.log(changedData.get("dif"));
+        // console.log("size ", changedData.size);
+        // console.log(changedData);
         if(changedData) {
             if (changedData.get("dif")) {
 
