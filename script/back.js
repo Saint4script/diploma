@@ -15,8 +15,8 @@ const surNames = [
     "Ainsworth", "Adcock", "Bolton", "Bonham", "Cole", "Clifford"
 ];
 const cabinetsID = [
-    "11505", "6070", "10861", "12143", "7665", "12462", "5751", "25956", "26108"
-];
+    "11505", "6070", "10861", "12143", "7665", "12462", "5751", "25956"
+]; //"26108" - на выход
 const departments = [
     "Management", "Frontend", "SEO", "Bookkeeping", "Cleaning", "Backend", "Design"
 ];
@@ -94,10 +94,18 @@ http.createServer(function(request, response) {
             sqlite.close();
             response.end();
         } else if (request.url == '/clr') {
+            response.setHeader("Content-Type", "text/html");
+            // почему-то работает только с этими двумя строками (на фронте должен присылаться 'cors' запрос)
+            response.setHeader("Access-Control-Allow-Origin", "*");
+            response.setHeader("Access-Control-Allow-Headers", "Content-Type, X-Requested-With");
 
-            
+            sqlite.connect('../databases/persons.db');
+            sqlite.run("delete from stuff;");
+            sqlite.close();
 
-         
+            response.write("1");
+
+            response.end();
         } else if(request.url == '/rnd') {
             response.setHeader("Content-Type", "text/html");
             // почему-то работает только с этими двумя строками (на фронте должен присылаться 'cors' запрос)
@@ -106,33 +114,27 @@ http.createServer(function(request, response) {
             
             
             let peopleCount = getRandomPeopleCount(15);
-            let cabID = getRandomCabinetID();
 
             sqlite.connect('../databases/persons.db');
+
+            console.log(result);
             
             for (let i = 0; i < peopleCount; i++) {
                 
                 let userName = getFullName(); 
                 let cabID = getRandomCabinetID();
-                let emailNickName = userName.split(" ").toString();
+                let email = userName.split(" ").join("") + "@gmail.com";
                 let department = getRandomDepartment();
 
-                console.log("email nickname: " + emailNickName);
-
-                let request_string = "insert into stuff (cab_id, full_fio, email, " +
-                "tel_number, location_name, department ) VALUES( " +
-                cabID + ", " +
-                userName + ", " +
-                emailNickName + ", " +
-                "@gmail.com" + ", " +
-                "89086564987" + ", " +
-                "выход" + ", " + 
-                department + ");";
+                let request_string = 'insert into stuff (cab_id, full_fio, email, ' +
+                'tel_number, department ) VALUES( ' +
+                '"' + cabID + '"' + ', ' +
+                '"' + userName + '"' + ', ' +
+                '"' + email + '"' + ", " +
+                '"89086564987"' + ', ' +
+                '"' + department + '"' + ');';
             
-
                 console.log(request_string);
-
-                response.write('hi');
                 
                 var result = sqlite.run(request_string);
                 console.log(result);
@@ -141,11 +143,11 @@ http.createServer(function(request, response) {
 
             response.write("1");
 
-            [
-            {"id":1,"cab_id":6070,"checker_name":null,"full_fio":"Biba Boba","location_name":"выход","department":"cleaning"},
-            {"id":2,"cab_id":5751,"checker_name":null,"full_fio":"Лена Хиди","location_name":"выход","department":"management"},
-            {"id":3,"cab_id":5751,"checker_name":null,"full_fio":"Joe Doe","location_name":"выход","department":"nachalnik"}
-            ]
+            // [
+            // {"id":1,"cab_id":6070,"checker_name":null,"full_fio":"Biba Boba","location_name":"выход","department":"cleaning"},
+            // {"id":2,"cab_id":5751,"checker_name":null,"full_fio":"Лена Хиди","location_name":"выход","department":"management"},
+            // {"id":3,"cab_id":5751,"checker_name":null,"full_fio":"Joe Doe","location_name":"выход","department":"nachalnik"}
+            // ]
 
             // {
             //     cab_id: '6070',
@@ -175,7 +177,7 @@ function getFullName() {
 
 function getRandomPeopleCount(peopleCountCoeff) {
     //peopleCountCoeff - задает максимальное количество генерируемых людей
-    return Math.floor(Math.random() * peopleCountCoeff5);
+    return Math.floor(Math.random() * peopleCountCoeff);
 }
 
 function getRandomCabinetID() {

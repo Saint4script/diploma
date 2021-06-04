@@ -26,17 +26,29 @@ class Person {
         this.location_name = location_name;
         this.html = undefined;
     }
-    //_id 
-    // cab_id 
-    // checker_name
-    // full_fio 
-    // last_date
-    // last_time 
-    // location_name 
-    // department 
 }
 
+btn_random.addEventListener("click", async (e) => {
+    e.preventDefault(); 
+    console.log("nazhal");
 
+    fetch(FETCH_URL + "/rnd", {
+        method: 'GET',
+        mode: 'cors'
+        }).then((response) => {
+            if (response.ok) { // если HTTP-статус в диапазоне 200-299
+                // получаем тело ответа 
+        
+                return response.text();
+        
+            } else {
+                console.log("Ошибка HTTP: " + response.status);
+            }
+    }).then(text => {
+        console.log(text);
+    });
+    
+});
 btn_clear.addEventListener("click", async (e) => {
     e.preventDefault(); 
 
@@ -248,7 +260,6 @@ function addNewPersonToMap(person) {
 
     // PERSONS.push(person);
 
-    // console.log(person);
     let strCabID = APItoLayoutMap[person.location].layoutName;
 
     // костыль для того, чтобы люди не толклись на 5 этаже в двери
@@ -443,7 +454,6 @@ function getStateDiffs() {
                                     if (existed_person.ID == person.ID) {
                     
                                         person.html = existed_person.html;
-                                        console.log(person.location, " ", existed_person.location)
                                         // если локация поменялась, то добавить в изменения
                                         if (person.location != existed_person.location) {
                                             diffPersonStates.push(person);

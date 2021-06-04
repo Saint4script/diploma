@@ -15,6 +15,7 @@
     align-items: center;
     overflow: hidden;
     /* position: relative; */
+    overflow: visible;
 }
 
 .placeholder p {
@@ -38,11 +39,12 @@
     position: relative;
 }
 
+/* left: -60%; top: -220%; */
 .person-icon:hover:after {
     content: attr(data-title);
     position: absolute;
-    left: -60%; top: -220%;
-    z-index: 4;
+    left: -160%; top: -20%; 
+    z-index: 100000;
     color: #350714;
     font-family: Ubuntu, sans-serif;
     font-size: 14px;
