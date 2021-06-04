@@ -106,18 +106,16 @@ http.createServer(function(request, response) {
             response.write("1");
 
             response.end();
+
         } else if(request.url == '/rnd') {
             response.setHeader("Content-Type", "text/html");
             // почему-то работает только с этими двумя строками (на фронте должен присылаться 'cors' запрос)
             response.setHeader("Access-Control-Allow-Origin", "*");
-            response.setHeader("Access-Control-Allow-Headers", "Content-Type, X-Requested-With");
-            
+            response.setHeader("Access-Control-Allow-Headers", "Content-Type, X-Requested-With");  
             
             let peopleCount = getRandomPeopleCount(15);
 
             sqlite.connect('../databases/persons.db');
-
-            console.log(result);
             
             for (let i = 0; i < peopleCount; i++) {
                 
@@ -143,25 +141,43 @@ http.createServer(function(request, response) {
 
             response.write("1");
 
-            // [
-            // {"id":1,"cab_id":6070,"checker_name":null,"full_fio":"Biba Boba","location_name":"выход","department":"cleaning"},
-            // {"id":2,"cab_id":5751,"checker_name":null,"full_fio":"Лена Хиди","location_name":"выход","department":"management"},
-            // {"id":3,"cab_id":5751,"checker_name":null,"full_fio":"Joe Doe","location_name":"выход","department":"nachalnik"}
-            // ]
+            response.end();
+        } else if (request.url == '/mov') {
+            response.setHeader("Content-Type", "text/html");
+            // почему-то работает только с этими двумя строками (на фронте должен присылаться 'cors' запрос)
+            response.setHeader("Access-Control-Allow-Origin", "*");
+            response.setHeader("Access-Control-Allow-Headers", "Content-Type, X-Requested-With");
+            
+            
+            
 
-            // {
-            //     cab_id: '6070',
-            //     full_fio: 'LupaPupa Pup',
-            //     email: 'saint.4.script@gmail.com',
-            //     tel_number: '89149484187',
-            //     avatar_name: '',
-            //     location_name: 'выход',
-            //     department: 'nachalnik'
-            // }
+            sqlite.connect('../databases/persons.db');
 
-            // insert into stuff (cab_id, full_fio, email, tel_number, avatar_name, location_name, department ) VALUES("6070", "LupaPupa Pup", "saint.4.script@gmail.com", "89149484187", "", "выход", "nachalnik");
+            user_list = [];
+            var result = sqlite.run("SELECT * FROM stuff");
+            result.forEach((item) => {
+                user = {};
+                user.id = item._id;
+                user.cab_id = item.cab_id;
+                user.checker_name = item.checker_name;
+                user.full_fio = item.full_fio;
+                user.location_name = item.location_name;
+                user.department = item.department;
+                user_list.push(user);
+            });
+
+            let peopleCount = getRandomPeopleCount(user_list.length / 2);
+            for (let i = 0; i < peopleCount; i++) {
+                let curPersonID = randomInteger(user_list[0].id, user_list[user_list.length-1].id);
+                let rndCab = getRandomCabinetID();
+                sqlite.run(`UPDATE stuff SET cab_id = "${rndCab}" WHERE _id = ${curPersonID};`);
+            }
+            sqlite.close();
+
+            response.write("1");
     
             response.end();
+
         }
     }
     
@@ -177,13 +193,37 @@ function getFullName() {
 
 function getRandomPeopleCount(peopleCountCoeff) {
     //peopleCountCoeff - задает максимальное количество генерируемых людей
-    return Math.floor(Math.random() * peopleCountCoeff);
+    return randomInteger(1, peopleCountCoeff);
 }
 
 function getRandomCabinetID() {
-    return cabinetsID[Math.floor(Math.random() * cabinetsID.length)];
+    return cabinetsID[randomInteger(0, cabinetsID.length-1)];
 }
 
 function getRandomDepartment() {
-    return departments[Math.floor(Math.random() * departments.length)];
+    return departments[randomInteger(0, departments.length-1)];
 }
+
+function randomInteger(min, max) {
+    // случайное число от min до (max+1)
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
+}
+
+// [
+    // {"id":1,"cab_id":6070,"checker_name":null,"full_fio":"Biba Boba","location_name":"выход","department":"cleaning"},
+    // {"id":2,"cab_id":5751,"checker_name":null,"full_fio":"Лена Хиди","location_name":"выход","department":"management"},
+    // {"id":3,"cab_id":5751,"checker_name":null,"full_fio":"Joe Doe","location_name":"выход","department":"nachalnik"}
+// ]
+
+// {
+//     cab_id: '6070',
+//     full_fio: 'LupaPupa Pup',
+//     email: 'saint.4.script@gmail.com',
+//     tel_number: '89149484187',
+//     avatar_name: '',
+//     location_name: 'выход',
+//     department: 'nachalnik'
+// }
+
+// insert into stuff (cab_id, full_fio, email, tel_number, avatar_name, location_name, department ) VALUES("6070", "LupaPupa Pup", "saint.4.script@gmail.com", "89149484187", "", "выход", "nachalnik");

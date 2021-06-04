@@ -5,6 +5,7 @@ const btn_push = document.querySelector("[data-action~='push']");
 const btn_pull = document.querySelector("[data-action~='pull']");
 const btn_clear = document.querySelector("[data-action~='clear']");
 const btn_random = document.querySelector("[data-action~='random']");
+const btn_move = document.querySelector("[data-action~='move']");
 const db_form = document.querySelector("[name='db-form']");
 
 //подключение к серверу
@@ -27,6 +28,28 @@ class Person {
         this.html = undefined;
     }
 }
+
+btn_move.addEventListener("click", async (e) => {
+    e.preventDefault(); 
+    console.log("nazhal");
+
+    fetch(FETCH_URL + "/mov", {
+        method: 'GET',
+        mode: 'cors'
+        }).then((response) => {
+            if (response.ok) { // если HTTP-статус в диапазоне 200-299
+                // получаем тело ответа 
+        
+                return response.text();
+        
+            } else {
+                console.log("Ошибка HTTP: " + response.status);
+            }
+    }).then(text => {
+        console.log(text);
+    });
+    
+});
 
 btn_random.addEventListener("click", async (e) => {
     e.preventDefault(); 
