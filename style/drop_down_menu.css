@@ -1,0 +1,54 @@
+.mainmenubtn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+
+.mainmenubtn:hover {
+    background-color: red;
+    }
+    
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+}
+.dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+
+/* ПОЧИНИТЬ ОРГАНИЗАЦИЮ ДАННЫХ */
+* {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.bd-info-form {
+    width: fit-content;
+    text-align: right;
+
+}
+
+.form-wrapper {
+    padding: 10px;
+    background-color: rgb(208, 195, 221);
+}
+
+.bd-info-form input {
+    margin: auto 0px auto auto;
+    /* float: left; */
+}

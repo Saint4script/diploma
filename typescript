@@ -1,0 +1,193 @@
+Script started on Sun May  9 18:06:35 2021
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project[0m[27m[24m[Jlupapup@MacBook-Pro project % [K[?2004hccd script[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hcd script[9Dnode back.js[?2004l
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+\Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004h\ node back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004hnode back.js[?2004l
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+Cannot enlarge memory arrays. Either (1) compile with  -s TOTAL_MEMORY=X  with X higher than the current value 16777216, (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which adjusts the size at runtime but prevents some optimizations, (3) set Module.TOTAL_MEMORY to a higher value before the program runs, or if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 
+/Users/lupapup/study/Диплом/project/node_modules/sql.js/js/sql.js:5
+1<process.argv.length?process.argv[1].replace(/\\/g,"/"):"unknown-program");f.arguments=process.argv.slice(2);"undefined"!==typeof module&&(module.exports=f);process.on("uncaughtException",function(a){if(!(a instanceof ka))throw a;});f.inspect=function(){return"[Emscripten Module object]"}}else if(fa)f.print||(f.print=print),"undefined"!=typeof printErr&&(f.printErr=printErr),f.read="undefined"!=typeof read?read:function(){throw"no read() available (jsc?)";},f.readBinary=function(a){if("function"===
+                                                                                                                                                                                                                               ^
+
+TypeError: result.forEach is not a function
+    at Server.<anonymous> (/Users/lupapup/study/Диплом/project/script/back.js:45:16)
+[90m    at Server.emit (node:events:365:28)[39m
+[90m    at parserOnIncoming (node:_http_server:924:12)[39m
+[90m    at HTTPParser.parserOnHeadersComplete (node:_http_common:127:17)[39m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro.local/Users/lupapup/study/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/project/script[0m[27m[24m[Jlupapup@MacBook-Pro script % [K[?2004h

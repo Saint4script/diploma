@@ -1,0 +1,106 @@
+/*  =================   */
+/*  Глобальные классы   */
+/*  =================   */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --wall: #350714;
+    --door: #072153;
+    --wall-thickness: 8;
+    --door-thickness: 4;
+    --back-image: url("../images/intro.jpg");
+}
+
+
+@font-face {
+    font-family: MedievalSharp;
+    src: url('../font/MedievalSharp-Regular.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("../font/Ubuntu-Medium.ttf");
+}
+
+
+/*  =======================================================   */
+/*  Классы ответственные за анимацию вступительной страницы   */
+/*  =======================================================   */
+
+.site-preview {
+    opacity:0;
+    transition: 2s;
+}
+
+.preview {
+    background: var(--back-image);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.floor-4-map-display {
+    transition:  ease-in-out 2s;
+}
+
+.map-texture {
+    --back-image: url("../images/map-texture.jpg");
+    transition:  ease-in-out 2s;
+}
+
+.display {
+    opacity: 0;
+}
+
+.existance {
+    display: none !important;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    font-size: 70px;
+    width: 100%;
+    padding-top: 10%;
+    font-family: 'MedievalSharp', cursive;
+}
+
+@media (max-width: 2000px) {
+    .text {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .text {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text {
+        font-size: 40px;
+    }
+}
+
+.text-display {
+    animation: textDisplay 1s;
+    opacity: 0;
+}
+
+@-webkit-keyframes textDisplay {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
